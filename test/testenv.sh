@@ -57,6 +57,10 @@ fi
 # Where Git LFS outputs the compiled binaries
 BINPATH="$ROOTDIR/bin"
 
+# Prefer git 'next' branch over system git.
+GIT_NEXT="/Users/ttaylorr/github/git"
+PATH="$GIT_NEXT:$PATH"
+
 # Put bin path on PATH
 PATH="$BINPATH:$PATH"
 

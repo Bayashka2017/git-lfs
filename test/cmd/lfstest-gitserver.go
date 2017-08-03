@@ -784,7 +784,7 @@ func gitHandler(w http.ResponseWriter, r *http.Request) {
 		r.Body.Close()
 	}()
 
-	cmd := exec.Command("git", "http-backend")
+	cmd := exec.Command("/Users/ttaylorr/github/git/git", "http-backend")
 	cmd.Env = []string{
 		fmt.Sprintf("GIT_PROJECT_ROOT=%s", repoDir),
 		fmt.Sprintf("GIT_HTTP_EXPORT_ALL="),
